@@ -1,24 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+
+import JobAd from "./JobAd";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <JobAd
+        type="Related Job"
+        location="Remote"
+        title="Senior Site Reliability Engineer"
+        company="PubNative GmbH"
+        jobText="We are looking for a Senior Site Reliability Engineer to build and operate infrastructure platforms and provide technical consultancy to engineering teams on how to build reliable, scalable and efficient services. ...(read more)"
+      />
     </div>
   );
 }
